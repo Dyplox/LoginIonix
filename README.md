@@ -41,11 +41,11 @@ Este proyecto utiliza los siguientes lenguajes y frameworks:
 1. Descargar la versión estable de
    Java [JDK](https://www.oracle.com/co/java/technologies/javase/jdk11-archive-downloads.html)
 2. Instalar [git](https://git-scm.com)
-3. Instalar Gradle Build Tool desde [aquí](https://gradle.org/install/)
-4. Instalar Android Studio [aquí](https://developer.android.com/studio)
-5. Instalar Appium Desktop(Server GUI) [aquí](https://github.com/appium/appium-desktop) o Instalar
-   Appium V2 [aquí](https://github.com/appium/appium)
-6. Instalar Appium Inspector [aquí](https://github.com/appium/appium-inspector)
+3. Instalar [Gradle](https://gradle.org/install/) Build Tool
+4. Instalar [Android Studio](https://developer.android.com/studio)
+5. Instalar [Appium Desktop](https://github.com/appium/appium-desktop) (Server GUI) o Instalar
+   Appium V2 [Appium V2](https://github.com/appium/appium)
+6. Instalar [Appium Inspector](https://github.com/appium/appium-inspector)
 
 **🗒️ Nota**: `build.gradle` tiene toda la configuración del proyecto instalada, ejecutar el
 siguiente comando para
