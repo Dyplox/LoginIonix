@@ -27,29 +27,26 @@ Este proyecto utiliza los siguientes lenguajes y frameworks:
 * [Cucumber](https://cucumber.io/) como software de testing BDD que permite elaborar pruebas a
   partir de AC.
 * [Java 11](https://www.oracle.com/co/java/technologies/javase/jdk11-archive-downloads.html) como
-  lenguaje de
-  programación.
+  lenguaje de programación.
 * [ScreenPlay](https://serenity-js.org/handbook/thinking-in-serenity-js/screenplay-pattern.html)
-  como el patrón de
-  diseño.
+  como el patrón de diseño.
 * [Gradle](https://gradle.org/) como herramienta de compilación.
 
 ***
 
 ## 🟢 Pre-requisitos: 🟢
 
-1. Descargar la versión estable de
-   Java [JDK](https://www.oracle.com/co/java/technologies/javase/jdk11-archive-downloads.html)
-2. Instalar [git](https://git-scm.com)
+1. Descargar la versión estable
+   de [Java JDK](https://www.oracle.com/co/java/technologies/javase/jdk11-archive-downloads.html)
+2. Instalar [Git](https://git-scm.com)
 3. Instalar [Gradle](https://gradle.org/install/) Build Tool
 4. Instalar [Android Studio](https://developer.android.com/studio)
-5. Instalar [Appium Desktop](https://github.com/appium/appium-desktop) (Server GUI) o Instalar
-   Appium V2 [Appium V2](https://github.com/appium/appium)
+5. Instalar [Appium Desktop](https://github.com/appium/appium-desktop) (Server GUI) o
+   Instalar [Appium V2](https://github.com/appium/appium)
 6. Instalar [Appium Inspector](https://github.com/appium/appium-inspector)
 
 **🗒️ Nota**: `build.gradle` tiene toda la configuración del proyecto instalada, ejecutar el
-siguiente comando para
-iniciar todas las tareas (Incluidos los test).
+siguiente comando para iniciar todas las tareas (Incluidos los test).
 
 👀 Adicional en su **IDE** de preferencia deberá tener instalados los siguientes plugins:
 
@@ -62,8 +59,7 @@ iniciar todas las tareas (Incluidos los test).
 
 **📄️ Generando los reportes de prueba**:  
 Con la ejecución del pipepile se generará un artefacto `testing-reports` donde se alojarán los
-reportes con los
-resultados de esa ejecución realizada.
+reportes con los resultados de esa ejecución realizada.
 
 ## ▶️ Ejecución del proyecto:
 
@@ -88,8 +84,7 @@ resultados de esa ejecución realizada.
     ```
 
 * **Opción 2**: Ir a las clases de la carpeta **runners** `src/test/java/io/appium/login/runners` y
-  ejecutar
-  cada Runner.
+  ejecutar cada Runner.
 
 ***
 
@@ -99,8 +94,7 @@ El informe al detalle con los pasos y resultados de las pruebas que se registrar
 `target/site/serenity/index.html`.
 
 Adicional se genera un reporte single page si se desea una revisión de alto nivel sobre los
-resultados de los test, el
-cual se registrará en la ruta:
+resultados de los test, el cual se registrará en la ruta:
 `target/site/serenity/serenity-summary.html`.
 
 Este comando permitirá generar ambos reportes:
