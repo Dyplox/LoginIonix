@@ -56,9 +56,9 @@ dependencies {
     implementation 'org.assertj:assertj-core:3.23.1'
     implementation 'org.hamcrest:hamcrest-all:1.3'
 
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.9.2'
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitJupiterEngine}"
-    testRuntimeOnly "org.junit.vintage:junit-vintage-engine:${junitJupiterEngine}"
+    implementation 'org.junit.platform:junit-platform-launcher:1.9.2'
+    implementation "org.junit.jupiter:junit-jupiter-engine:${junitJupiterEngine}"
+    implementation "org.junit.vintage:junit-vintage-engine:${junitJupiterEngine}"
 
     implementation 'ch.qos.logback:logback-classic:1.4.5'
     implementation 'org.slf4j:slf4j-simple:2.0.7'

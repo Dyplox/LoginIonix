@@ -28,8 +28,11 @@ public class Hooks {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName", "M2102J20SG");
         capabilities.setCapability("platformVersion", "12S");
-        capabilities.setCapability("appium:app", System.getProperty("user.dir") + "/apps/app-test-QA.apk");
+        capabilities.setCapability("appPackge", "com.appqa");
+        capabilities.setCapability("appActivity", "com.appqa.appqa");
         capabilities.setCapability("appium:ensureWebviewsHavePages", true);
+
+        capabilities.setCapability("appium:app", System.getProperty("user.dir") + "/apps/app-test-QA.apk");
 
         AndroidDriver driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
 

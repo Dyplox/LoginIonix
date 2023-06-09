@@ -1,10 +1,11 @@
 package io.appium.login.tasks.common;
 
-import static io.appium.login.userinterface.SingInPage.BTN_CLOSE_WINDOW;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
+import static io.appium.login.userinterface.SingInPage.LBL_VISTA;
 
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
-import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 
 public class NavigateTo {
     private NavigateTo() {
@@ -13,8 +14,7 @@ public class NavigateTo {
 
     public static Performable theStaysTab() {
         return Task.where("{0} opens the Booking app",
-                Click.on(BTN_CLOSE_WINDOW)
-                //WaitUntil.the(SEARCH_FIELDS, isEnabled()).forNoMoreThan(5).seconds()
+                WaitUntil.the(LBL_VISTA, isVisible()).forNoMoreThan(5).seconds()
         );
     }
 
