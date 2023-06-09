@@ -1,4 +1,4 @@
-package io.appium.login.steps.conf;
+package io.appium.login.stepsDefinitions.conf;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
@@ -6,13 +6,13 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Steps;
 
-import org.junit.Before;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 public class Hooks {
@@ -29,7 +29,7 @@ public class Hooks {
         capabilities.setCapability("deviceName", "M2102J20SG");
         capabilities.setCapability("platformVersion", "12S");
         capabilities.setCapability("appPackge", "com.appqa");
-        capabilities.setCapability("appActivity", "com.appqa.appqa");
+        //capabilities.setCapability("appActivity", "com.appqa.appqa");
         capabilities.setCapability("appium:ensureWebviewsHavePages", true);
 
         capabilities.setCapability("appium:app", System.getProperty("user.dir") + "/apps/app-test-QA.apk");

@@ -12,7 +12,7 @@ public class NavigateTo {
         //Nothing
     }
 
-    public static Performable theStaysTab() {
+    public static Performable register() {
         return Task.where("{0} opens the Booking app",
                 WaitUntil.the(LBL_VISTA, isVisible()).forNoMoreThan(5).seconds()
         );

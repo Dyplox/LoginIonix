@@ -1,4 +1,4 @@
-package io.appium.login.steps.conf;
+package io.appium.login.stepsDefinitions.conf;
 
 import io.appium.java_client.AppiumDriver;
 

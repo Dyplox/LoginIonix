@@ -7,8 +7,16 @@ import org.openqa.selenium.By;
 public class SingInPage {
 
     // dr.findElement(By.id("android:id/text1")).click(); //for Android
-    public static final Target LBL_VISTA = Target.the("Tilutlo de la pagina 'Regist'")
-            .located(By.id("android.view.View:id/00000000-0000-01cf-ffff-ffff00000025"));
+    //driver.findElement(By.xpath("//android.widget.TextView[@text=‘ADD’]"))
+    //By.xpath("//*[@text='" + element + "']");
+
+    //[contains(text(),’’)]
+    //[contains(@id,’’)]
+    //*[contains(@xpath,’’)]
+
+    public static final Target LBL_VISTA = Target.the("Tilutlo de la pagina 'Register'")
+            //.located(By.id("android.view.View:id/00000000-0000-01cf-ffff-ffff00000025"));
+            .located(By.xpath("//android.view.View[@text='Register']"));
 
     // Fomrulario de ingreso - titulo
     public static final Target LBL_TITLE_LOGIN = Target.the("Tilutlo de la pagina 'Create an account'")
@@ -41,6 +49,17 @@ public class SingInPage {
 
     public static final Target LBL_EMAIL_ALARM = Target.the("Input de email")
             .located(By.id("android.view.TextView:id/00000000-0000-01cf-ffff-ffff0000002d"));
+
+    //  Validacion de email no puesto
+    public static final Target PUP_EMAIL_OPTIONAL = Target
+            .the("Your email is empty, we recommended since is needed for account recovery, do you want continue?\n")
+            .located(By.id("android.view.TextView:id/00000000-0000-03bb-ffff-ffff00000032"));
+
+    public static final Target BTN_EMAIL_CANCEL = Target.the("Boton de email cancel")
+            .located(By.id("android.view.TextView:id/00000000-0000-03bb-ffff-ffff00000033"));
+
+    public static final Target BTN_EMAIL_CONFIRM = Target.the("Boton de email cancel")
+            .located(By.id("android.view.TextView:id/00000000-0000-03bb-ffff-ffff00000035"));
 
     // Boton enviar
     public static final Target BTN_SUBMIT = Target.the("Boton enviar")

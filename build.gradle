@@ -81,7 +81,8 @@ task parallel(type: Test) {
 }
 
 test {
-    useJUnit()
+    //useJUnit()
+    useJUnitPlatform()
     ignoreFailures = true
     testLogging.showStandardStreams = true
     systemProperties System.getProperties()
