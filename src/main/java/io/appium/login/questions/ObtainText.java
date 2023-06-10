@@ -24,7 +24,7 @@ public class ObtainText implements Question<String> {
 
     @Override
     public String answeredBy(Actor actor) {
-        actor.attemptsTo(WaitUntil.the(target, WebElementStateMatchers.isVisible()).forNoMoreThan(3).seconds());
+        actor.attemptsTo(WaitUntil.the(target, WebElementStateMatchers.isVisible()).forNoMoreThan(5).seconds());
         return actor.asksFor(Text.of(target).asString());
     }
 }

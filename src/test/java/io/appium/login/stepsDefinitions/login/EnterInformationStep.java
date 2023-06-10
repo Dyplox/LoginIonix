@@ -4,7 +4,9 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.Matchers.equalTo;
 import static io.appium.login.exceptions.NotFoundText.REGLA;
 import static io.appium.login.stepsDefinitions.conf.Hooks.ABEL;
+import static io.appium.login.userinterface.SingInPage.LBL_EMAIL_ALARM;
 import static io.appium.login.userinterface.SingInPage.LBL_PASSWORD_ALARM;
+import static io.appium.login.userinterface.SingInPage.LBL_PASSWORD_REPEAT_ALARM;
 import static io.appium.login.userinterface.SingInPage.LBL_USERNAME_ALARM;
 import static io.appium.login.userinterface.WelcomePage.LBL_VISTA_WELCOME;
 import static io.appium.login.utils.data.Constantes.WELCOME_IONIX;
@@ -43,8 +45,24 @@ public class EnterInformationStep {
 
     @Entonces("valida el las alertas para el campo password {string}")
     public void validaElLasAlertasParaCadaCampoPassword(String description) {
-        ABEL.should(seeThat("No cumple con la reglas del campo Username: ",
+        ABEL.should(seeThat("No cumple con la reglas del campo Password: ",
                         ObtainText.element(LBL_PASSWORD_ALARM), equalTo(description)
+                ).orComplainWith(NotFoundText.class, REGLA)
+        );
+    }
+
+    @Entonces("valida el las alertas para el campo Repeat Password {string}")
+    public void validaElLasAlertasParaCadaCampoRepeatPassword(String description) {
+        ABEL.should(seeThat("No cumple con la reglas del campo Password: ",
+                        ObtainText.element(LBL_PASSWORD_REPEAT_ALARM), equalTo(description)
+                ).orComplainWith(NotFoundText.class, REGLA)
+        );
+    }
+
+    @Entonces("valida el las alertas para el campo email {string}")
+    public void validaElLasAlertasParaCadaCampoEmail(String description) {
+        ABEL.should(seeThat("No cumple con la reglas del campo Password: ",
+                        ObtainText.element(LBL_EMAIL_ALARM), equalTo(description)
                 ).orComplainWith(NotFoundText.class, REGLA)
         );
     }

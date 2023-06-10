@@ -38,7 +38,7 @@ public class InsertInfomationTask implements Task {
     @Step("{0} enter login data")
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                WaitUntil.the(LBL_TITLE_LOGIN, isVisible()).forNoMoreThan(2).seconds(),
+                WaitUntil.the(LBL_TITLE_LOGIN, isVisible()).forNoMoreThan(5).seconds(),
 
                 Enter.theValue(userName).into(IPT_USERNAME),
                 Enter.theValue(passWord).into(IPT_PASSWORD),

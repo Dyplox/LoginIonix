@@ -14,7 +14,7 @@ public class NavigateTo {
 
     public static Performable register() {
         return Task.where("{0} opens the app",
-                WaitUntil.the(LBL_VISTA, isVisible()).forNoMoreThan(2).seconds()
+                WaitUntil.the(LBL_VISTA, isVisible()).forNoMoreThan(10).seconds()
         );
     }
 
