@@ -19,28 +19,28 @@ public class SingInPage {
             .located(By.xpath("//android.widget.EditText[@text='Username']"));
 
     public static final Target LBL_USERNAME_ALARM = Target.the("Input de Username")
-            .located(By.xpath("android.view.TextView:id/00000000-0000-01cf-ffff-ffff00000033"));
+            .located(By.xpath("//android.widget.TextView[@index='2']"));
 
     // Password
     public static final Target IPT_PASSWORD = Target.the("Input de Password")
             .located(By.xpath("//android.widget.EditText[@text='Password']"));
 
     public static final Target LBL_PASSWORD_ALARM = Target.the("Input de Password")
-            .located(By.xpath("android.view.TextView:id/00000000-0000-01cf-ffff-ffff00000028"));
+            .located(By.xpath("//android.widget.TextView[@index='4']"));
 
 
     public static final Target IPT_PASSWORD_REPEAT = Target.the("Input de Password Repeat")
             .located(By.xpath("//android.widget.EditText[@text='Repeat password']"));
 
     public static final Target LBL_PASSWORD_REPEAT_ALARM = Target.the("Input de Password Repeat")
-            .located(By.xpath("android.view.TextView:id/00000000-0000-01cf-ffff-ffff00000018"));
+            .located(By.xpath("//android.view.TextView:id/00000000-0000-01cf-ffff-ffff00000018"));
 
     // Email
     public static final Target IPT_EMAIL = Target.the("Input de emial")
             .located(By.xpath("//android.widget.EditText[@text='Email (Optional)']"));
 
     public static final Target LBL_EMAIL_ALARM = Target.the("Input de email")
-            .located(By.xpath("android.view.TextView:id/00000000-0000-01cf-ffff-ffff0000002d"));
+            .located(By.xpath("//android.view.TextView:id/00000000-0000-01cf-ffff-ffff0000002d"));
 
     //  Validacion de email no puesto
     public static final Target PUP_EMAIL_OPTIONAL = Target

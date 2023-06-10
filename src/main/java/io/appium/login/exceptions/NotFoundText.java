@@ -1,7 +1,7 @@
 package io.appium.login.exceptions;
 
 public class NotFoundText extends AssertionError {
-    public static final String THE_VALUE_IS_NOT_EXPECT = "The value is not expected";
+    public static final String REGLA = "La regla no se cumple";
 
     public NotFoundText(String message, Throwable cause) {
         super(message, cause);
