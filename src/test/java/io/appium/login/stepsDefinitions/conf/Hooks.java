@@ -6,11 +6,13 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Steps;
 
+import org.junit.After;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -40,5 +42,12 @@ public class Hooks {
 
         OnStage.setTheStage(new OnlineCast());
         ABEL.whoCan(BrowseTheWeb.with(driver));
+    }
+
+    @After
+    public void setDown(Scenario scenario) throws MalformedURLException {
+        AppiumDriver driver = sharedComponents.getDriver();
+        driver.close();
+        driver.quit();
     }
 }

@@ -13,8 +13,8 @@ public class NavigateTo {
     }
 
     public static Performable register() {
-        return Task.where("{0} opens the Booking app",
-                WaitUntil.the(LBL_VISTA, isVisible()).forNoMoreThan(5).seconds()
+        return Task.where("{0} opens the app",
+                WaitUntil.the(LBL_VISTA, isVisible()).forNoMoreThan(2).seconds()
         );
     }
 

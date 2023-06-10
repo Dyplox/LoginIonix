@@ -23,7 +23,7 @@ public class IsEnabled implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
-        actor.attemptsTo(WaitUntil.the(target, WebElementStateMatchers.isEnabled()).forNoMoreThan(10).seconds());
+        actor.attemptsTo(WaitUntil.the(target, WebElementStateMatchers.isEnabled()).forNoMoreThan(3).seconds());
         return target.resolveFor(actor).isCurrentlyEnabled();
     }
 

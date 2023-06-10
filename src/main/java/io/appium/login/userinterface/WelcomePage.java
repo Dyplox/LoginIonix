@@ -7,11 +7,11 @@ import org.openqa.selenium.By;
 public class WelcomePage {
 
     public static final Target IMG_LOADER = Target.the("Loader image' ")
-            .located(By.id("android.view.ImageView:id/00000000-0000-03b7-ffff-ffff00000087"));
+            .located(By.id("//android.view.ImageView:id/00000000-0000-03b7-ffff-ffff00000087"));
 
 
     public static final Target LBL_VISTA_WELCOME = Target.the("Tilutlo de la pagina 'Welcome' ")
-            .located(By.id("android.view.View:id/00000000-0000-01cf-ffff-ffff00000058"));
+            .located(By.xpath("//android.widget.TextView[@text, 'Welcome to ionix']"));
 
     public static final Target LBL_BACK_REGISTRE = Target.the("Regresar a Register")
             .located(By.id("android.view.ImageView:id/00000000-0000-01cf-ffff-ffff00000056"));
